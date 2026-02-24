@@ -1,108 +1,65 @@
-Spam Message Detection using Machine Learning
+# 📩 Spam Message Detection using Machine Learning
 
+## 📌 Project Overview
+This is a beginner-friendly Machine Learning project built using **Python**.
+The project detects whether a message is **Spam** or **Ham (Normal message)** using a supervised learning algorithm.
 
+---
 
-📌 Project Overview
-
-
-
-This is a beginner-friendly Machine Learning project built using Python.
-
-The project detects whether a message is Spam or Ham (Normal message) using a supervised learning algorithm.
-
-🎯 Objective
-
-
-
+## 🎯 Objective
 To classify SMS/text messages automatically as:
+- **Spam** → unwanted or promotional messages
+- **Ham** → normal messages
 
-Spam → unwanted or promotional messages
+---
 
-Ham → normal messages
+## 🧠 Machine Learning Concept
+- **Type:** Supervised Learning
+- **Algorithm:** Naive Bayes (MultinomialNB)
+- **Text Processing:** CountVectorizer
 
-🧠 Machine Learning Concept
+---
 
-Type: Supervised Learning
+## 🛠️ Technologies Used
+- Python
+- Pandas
+- Scikit-learn
 
-Algorithm: Naive Bayes (MultinomialNB)
+---
 
-Text Processing: CountVectorizer
-
-🛠️ Technologies Used
-
-Python
-
-Pandas
-
-Scikit-learn
-
-📂 Project Structure
-
+## 📂 Project Structure
 Spam_Detection_Project
 │
 ├── spam.csv # Dataset
 ├── main.py # Main Python code
 └── README.md # Project documentation
 
-📊 Dataset
+---
 
-
-
+## 📊 Dataset
 The dataset contains example messages with labels:
 
-Message
-
-Label
-
-Win money now
-
-spam
-
-Hello how are you       
-
-ham
-
+| Message | Label |
+|---|---|
+| Win money now | spam |
+| Hello how are you | ham |
 
 The model learns patterns from these examples.
 
-⚙️ How It Works
+---
 
-Load dataset using Pandas
+## ⚙️ How It Works
+1. Load dataset using Pandas
+2. Convert text into numbers using CountVectorizer
+3. Train model using Naive Bayes algorithm
+4. Take user input message
+5. Predict whether message is spam or ham
 
-Convert text into numbers using CountVectorizer
+---
 
-Train model using Naive Bayes algorithm
+## ▶️ How to Run the Project
 
-Take user input message
-
-Predict whether message is spam or ham
-
-▶️ How to Run the Project
-
-
-
-Install required libraries
-
+### Install required libraries
+```bash
 pip install pandas scikit-learn
-
-Run the program
-
-python main.py
-
-Example Output
-
-Enter your message: Win free cash now
-
-Prediction: spam
-
-Learning Outcome
-
-Basic understanding of Machine Learning
-
-Text classification using Python
-
-Working with datasets
-
-Building a simple ML model
-
 
